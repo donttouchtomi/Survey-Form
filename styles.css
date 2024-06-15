@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(64, 64, 78, 0.7)), url(https://wallpapers.com/images/hd/4k-laptop-dream-desk-27xhabcycspkqeg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#title {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#description {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white
+}
+
+#survey-form {
+  max-width: 720px;
+  margin: 20px auto;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(27, 27, 50, 0.8);
+  color: rgb(243, 243, 243);
+}
+
+.name,
+.email,
+.age,
+.option,
+.radio,
+.preference {
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#name,
+#email,
+#number {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: rgb(200, 200, 200)
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+select {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+}
+
+#dropdown {
+  font-size: 16px;
+  color: rgb(158, 158, 158);
+}
+
+select option {
+  font-size: 16px;
+}
+
+.radio p,
+.preference p {
+  margin-bottom: 10px;
+}
+
+.radio label,
+.preference label {
+  padding: 20px;
+}
+
+.radio input,
+.preference input {
+  margin: 5px 10px;
+}
+
+.suggestion p {
+  margin-bottom: 10px;
+}
+
+.suggestion textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.suggestion textarea::placeholder {
+  font-size: 16px;
+  color: rgb(158, 158, 158)
+}
+
+input[type="submit"] {
+  padding: 10px 0;
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  border: none;
+  font-size: 1.1rem;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

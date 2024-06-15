@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Registration Form</title>
+</head>
+
+<body>
+
+  <h1 id="title">Tomisin Akinyemi Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <div class="name">
+      <label id="name-label" for="name">Enter Your Name
+        <input required placeholder="Name" type="text" name="name" id="name">
+      </label>
+    </div>
+
+    <div class="email">
+      <label id="email-label" for="email">Enter Your Email
+        <input required placeholder="Email" type="email" name="email" id="email">
+      </label>
+    </div>
+    <div class="age">
+      <label id="number-label" for="number">Enter Your Age
+        <input name="number" placeholder="Age" type="number" name="age" id="number" min="18" max="100">
+      </label>
+    </div>
+    <div class="option">
+      <p>What are your hobbies</p>
+      <select name="option" id="dropdown">
+        <option value="sleeping">Sleeping</option>
+        <option value="reading">Reading</option>
+        <option value="dancing">Dancing</option>
+      </select>
+    </div>
+    <div class="radio">
+      <p>Would you refer us to your friends</p>
+      <label for="Yes">
+        <input type="radio" value="Yes" name="recommendation" id="Yes">Yes
+      </label>
+      <br>
+      <label for="No">
+        <input type="radio" value="No" name="recommendation" id="No">No
+      </label>
+      <br>
+      <label for="Maybe">
+        <input type="radio" value="Maybe" name="recommendation" id="Maybe">Maybe
+      </label>
+    </div>
+    <div class="preference">
+      <p>What would you prefer</p>
+      <label for="frontend">
+        <input type="checkbox" required name="preference" id="frontend" value="value"> Frontend Development
+      </label>
+      <br>
+      <label for="backend">
+        <input type="checkbox" required name="preference" id="backend" value="value"> Backend Development
+      </label>
+    </div>
+    <div class="suggestion">
+      <p>Any Suggestions</p>
+      <textarea name="bio" id="bio" placeholder="Tell us what you feel" rows="10" cols="50"></textarea>
+    </div>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
