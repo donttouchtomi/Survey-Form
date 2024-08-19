@@ -27,11 +27,13 @@
     <div class="email">
       <label id="email-label"for="email">Enter Your Email
         <input required placeholder="Email" type="email" name="email" id="email">
+        <p id="outputEmail" class="outputText"></p>
       </label>
     </div>
     <div class="age">
-      <label id="number-label"for="number">Enter Your Age
+      <label id="number-label" for="number">Enter Your Age
         <input name="number" placeholder="Age" type="number" name="age" id="number" min="18" max="100">
+        <p id="outputText" class="outputText"></p>
       </label>
     </div>
     <div class="option">
@@ -55,23 +57,28 @@
       <label for="Maybe">
         <input type="radio" value="Maybe" name="recommendation" id="Maybe">Maybe
       </label>
+      <p id="outputRadio" class="outputText"></p>
     </div>
     <div class="preference">
       <p>What would you prefer</p>
       <label for="frontend">
-        <input type="checkbox" required name="preference" id="frontend" value="value"> Frontend Development
+        <input type="checkbox" required name="preference" id="frontend" value="frontend"> Frontend Development
       </label>
       <br>
       <label for="backend">
-        <input type="checkbox" required name="preference" id="backend" value="value"> Backend Development
+        <input type="checkbox" required name="preference" id="backend" value="backend"> Backend Development
       </label>
+      <p id="outputCheckbox" class="outputText"></p>
     </div>
     <div class="suggestion">
       <p>Any Suggestions</p>
       <textarea name="bio" id="bio" placeholder="Tell us what you feel" rows="10" cols="50"></textarea>
     </div>
-    <input id="submit" type="submit" value="Submit">
+    <button id="submit">Submit</button>
+    <!-- <input id="submit" type="submit" value="Submit"> -->
   </form>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

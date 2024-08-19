@@ -96,7 +96,7 @@ select option {
   font-size: 16px;
   color: rgb(158, 158, 158)
 }
-input[type="submit"] {
+#submit {
   padding: 10px 0;
   display: block;
   width: 80%;
@@ -105,5 +105,11 @@ input[type="submit"] {
   font-size: 1.1rem;
   background-color: white;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.outputText {
+  font-size: 0.8rem;
+  margin: 10px 15px;
   cursor: pointer;
 }
