@@ -54,7 +54,7 @@ label {
 }
 input::placeholder {
   font-size: 1rem;
-  color: rgb(200, 200, 200)
+  color: #c8c8c8
 }
 p {
   font-weight: bold;
